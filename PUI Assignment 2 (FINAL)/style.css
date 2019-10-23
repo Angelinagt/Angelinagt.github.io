@@ -586,6 +586,118 @@ padding-top: 20px;
 } 
 
 
+/*CART*/
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'item1pic item1description'
+    'item2pic item2description'
+    'item3pic item3description'
+    'total total'
+    'checkout checkout'
+    ;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: start;
+    grid-gap: 20px;
+
+    /*grid-template-columns: 500px 500px;
+    grid-template-rows: 80px auto auto auto 80px; */
+   /* grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-content: center;
+    align-content: center; */
+}
+
+#header-cart h2{
+    grid-area: header;
+    font-family: Catamaran;
+    font-size: 21px;
+    margin: 10px auto;
+    font-weight: 600;
+    color: #111;  
+    text-align: left;
+    text-transform: uppercase;
+}
+
+}
+
+.plainRollsPic{
+    grid-area:item1pic;
+     /* width: 40%; */
+
+}
+
+.plainrollstext{
+    grid-area: item1description;
+}
+
+.blackberryPic{
+    grid-area:item2pic;
+    /*width: 40%;*/
+}
+
+.chocoroll{
+    grid-area:item3pic;
+   /* width: 40%; */
+}
+
+.blackberrytext{
+    grid-area: item2description;
+}
+
+.chocolatetext{
+    grid-area: item3description;
+}
+
+.purchase{
+    grid-area: checkout;
+}
+.totalp{
+    grid-area: total;
+    text-align: center;
+
+}
+
+#totalpp{
+    font-family: Catamaran;
+    font-size: 30px;
+    font-weight: 600;
+    color: #111;  
+    text-transform: uppercase;
+}
+
+img{
+    width: 200px;
+}
+
+.grid-container h3{
+    font-family: Catamaran;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;  
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.grid-container p{
+    font-family: Catamaran;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    padding-top: 20px;
+}
+
+
+
+
+
+
 
 /*footer*/
 

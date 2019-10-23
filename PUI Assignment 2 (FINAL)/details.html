@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Catamaran|Cormorant+Garamond|Righteous&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
         <header>
@@ -17,7 +18,7 @@
                     <li><a href="details.html">Product Details</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
-                <a href="cart.html" class="header-cart">Cart</a>
+                <a href="cart.html" class="header-cart" id="cartvalue">Cart</a>
             </nav>
         </header>
         <main>
@@ -29,7 +30,7 @@
             </section>
             <section class="optionsContainer">
                 <div class="rollimage">
-                    <img src="images/bittenroll.jpg" alt="Original Roll">
+                    <img src="images/bittenroll.jpg" id= "cful" alt="Original Roll">
                 </div>
                 <div class="detailoptions">
                     <h2>Original Cinnamon Roll</h2>
@@ -37,35 +38,36 @@
                     <br>
                     <br>
                     <h3>Bread type</h3>
-                        <select>
+                        <p>Plain</p>
+                        <!--<select>
                             <option value="Original">Original</option>
                             <option value="Blackberry">Blackberry</option>
                             <option value="Walnut">Walnut</option>
-                            <option value="Original (Gluten-free)">Original (Gluten-free)</option>
+                            <option value="Glutenfree">Original (Gluten-free)</option>
                             <option value="Pumpkin Spice">Pumpkin Spice</option>
                             <option value="Caramel Pecan">Caramel Pecan</option>
-                        </select>
+                        </select> -->
                     <h3>Icing</h3>
-                        <select>
-                            <option value="Sugar-milk">Sugar-milk</option>
-                            <option value="Vanilla-milk">Vanilla-milk</option>
-                            <option value="Double-chocolate">Double-chocolate</option>
-                            <option value="None">None</option>
+                        <select name="icingtype" onChange="jsDropdown('cful',this.value)">
+                            <option value="bittenroll">Sugar-milk</option>
+                            <option value="two-buns">Vanilla-milk</option>
+                            <option value="chocolateicingroll">Double-chocolate</option>
+                            <option value="chocolateroll">None</option>
                         </select>
                     <h3>Quantity</h3>
-                        <select>
-                            <option value="one">1</option>
-                            <option value="three">3</option>
-                            <option value="six">6</option>
-                            <option value="twelve">12</option>
+                        <select name="quantitytype" id="quantity" onChange="jsQuantdown(this.value)">
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="6">6</option>
+                            <option value="12">12</option>
                         </select>
                     <br>
                     <br>
                     <h3>Total</h3>
-                        <h2>$1.00</h2>
+                        <h2 id="total">$1.00</h2>
                     <br>
                     <br>
-                    <button type="button" class="purchase">ADD TO CART</button>
+                    <button type="button" class="purchase" onClick="addToCart()">ADD TO CART</button>
             </section>
             </div>
             </section>
@@ -85,4 +87,5 @@
             </footer>
         </div>  
     </body>
+    <script type="text/Javascript" src="func.js"></script>
 </html>
