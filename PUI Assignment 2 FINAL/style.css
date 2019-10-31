@@ -588,15 +588,22 @@ padding-top: 20px;
 
 /*CART*/
 
-.grid-container{
+#cart-table {
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    padding: 10px;
+    flex-flow: column;
+    /* background-color: aqua; */
+}
+
+/* .grid-container{
     display: grid;
     grid-template-areas: 
-    'header header'
-    'item1pic item1description'
-    'item2pic item2description'
-    'item3pic item3description'
-    'total total'
-    'checkout checkout'
+    'header header header'
+    'itempic itemdescription itemremove'
+    'total total total'
+    'checkout checkout checkout'
     ;
     width: 70%;
     margin: 0 auto;
@@ -610,10 +617,32 @@ padding-top: 20px;
     grid-row-gap: 50px;
     justify-content: center;
     align-content: center; */
+} */
+
+.table-row {
+    flex: 0 0 auto;
+    display: flex;
+    flex-flow: row;
 }
 
+.product-container {
+    justify-content: space-between;
+    flex: 0 0 auto;
+    align-items: center ;
+    margin: 20px; 
+    display: flex;
+    flex-flow: row;
+    /* background-color: red; */
+}
+
+.product-container-cell {
+    flex: 0 0 auto;
+    /* background-color: purple; */
+}
+
+
 #header-cart h2{
-    grid-area: header;
+    /* grid-area: header; */
     font-family: Catamaran;
     font-size: 21px;
     margin: 10px auto;
@@ -625,14 +654,19 @@ padding-top: 20px;
 
 }
 
-.plainRollsPic{
-    grid-area:item1pic;
+.itempic{
+    /* grid-area:itempic; */
+
      /* width: 40%; */
 
 }
 
-.plainrollstext{
-    grid-area: item1description;
+.itemtext{
+    grid-area: itemdescription;
+}
+
+.itemremove {
+    grid-area: itemremove;
 }
 
 .blackberryPic{
@@ -655,12 +689,20 @@ padding-top: 20px;
 
 .purchase{
     grid-area: checkout;
+    text-align: center;
+    align-items: center;
 }
 .totalp{
     grid-area: total;
     text-align: center;
 
 }
+
+#header-cart{
+    display: flex;
+    justify-items: center;
+}
+
 
 #totalpp{
     font-family: Catamaran;
@@ -672,6 +714,12 @@ padding-top: 20px;
 
 img{
     width: 200px;
+}
+
+#checkoutbutton{
+    display: flex;
+    justify-content: center;
+    width: 500px;
 }
 
 .grid-container h3{
