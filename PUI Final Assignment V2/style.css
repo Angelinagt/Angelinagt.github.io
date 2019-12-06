@@ -1,9 +1,32 @@
+/*------------
+ *  info sec
+ *------------*/
+  @media (min-width: 992px){
+    .aboutimg{
+      float: left;
+      width: 50%;  
+    }
+    .info-container{
+      float: left;
+      width: 50%;  
+    }
+  }
+
+
+
 /*Top Navigation*/
 
+
+
+
+/*TOP NAVIGATION OLD*/
+/* 
 .navbar-btn{
   background-color: deepskyblue;
   border-color:  deepskyblue;
-  align-content: right;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 
 }
 
@@ -13,7 +36,52 @@
 }
 
 
-/**/
+.navbar-brand{
+  color: black;
+}
+
+.navbar{
+  border-color: #fff !important;
+}
+
+.navbar-logo{
+  max-width: 6con0%;
+  max-height: 60%;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+}
+
+.navbar-inverse .navbar-brand{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navcategories{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 767px){
+  .navbar-btn{
+    top: 0;
+    right: 10px;
+  }
+} */
+
+/*HERO intro banner*/
 
 body,
 html {
@@ -22,18 +90,21 @@ html {
 }
 
 h1 {
-  font-family: Georgia;
-  font-weight: bold;
-  font-style: italic;
+  font-family: 'Raleway', sans-serif;
+  font-weight: medium;
   margin: 10px;
-  text-shadow: 2px 2px #000;
+  color: black;
 }
 
 p {
-  font-family: Georgia;
-  font-style: italic;
-  text-shadow: 1px 1px #000;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(65, 65, 65);
 }
+
+h5 {
+  color: rgb(65, 65, 65);
+}
+
 
 .exclusions {
   font-family: Georgia;
@@ -45,11 +116,30 @@ p {
 
 .hero-image {
   background-image: url(images/poorchildren.jpg);
-  height: 100%;
+  height: 25%;
+  background-color: rgba(0,0,0, 0.9);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   margin-top: -20px;
+}
+
+#herotextlarge{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin: 10px;
+  color: white;
+  font-size: 400%; 
+  /* text-shadow: 2px 2px #000; */
+}
+
+.heromediumtext{
+  font-family: Georgia;
+  font-weight: medium;
+  margin: 10px;
+  color: white;
+  font-size: 150%; 
+  /* text-shadow: 2px 2px #000; */
 }
 
 .hero-text {
@@ -96,91 +186,6 @@ p {
   text-shadow: 2px 2px #000;
 }
 
-/*start of popup*/
-.exclusions {
-  font-family: Georgia;
-  font-size: 8pt;
-  letter-spacing: 1px;
-  text-shadow: none;
-  font-style: normal;
-}
-
-.box {
-  width: 40%;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 35px;
-  border: 2px solid #fff;
-  border-radius: 20px/50px;
-  background-clip: padding-box;
-  text-align: center;
-}
-
-/*.button {
-  font-size: 1em;
-  padding: 10px;
-  color: #fff;
-  border: 2px solid #06D85F;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.button:hover {
-  background: #06D85F;
-}*/
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 2px;
-  width: 60%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Georgia, sans-serif;
-  font-style: italic;
-}
-
-.popup .close {
-  position: fixed;
-  top: 90px;
-  left: 50%;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #a6a6a6;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-  padding-top: 30px;
-}
 
 @media screen and (max-width: 700px) {
   .box {
@@ -213,6 +218,158 @@ a:active {
   color: #fff;
 }
 
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,20px,0)
+  }
+
+  to {
+      transform: translate3d(0,-120px,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,20px,0)
+  }
+
+  to {
+      transform: translate3d(0,100px,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+
+
+
+/*OVERVIEW CARD INFORMATION*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.overview-snip1208 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  background: #fff;
+  box-shadow: 0 14px 28px rgba(153, 153, 153, 0.25), 0 10px 10px rgba(214, 214, 214, 0.22);
+  border-radius: 2px;
+  text-align: left;
+  font-size: 16px;
+}
+
+
+
+
+figure.overview-snip1208 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+figure.overview-snip1208 img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+figure.overview-snip1208 figcaption {
+  padding: 25px;
+  position: relative;
+}
+
+figure.overview-snip1208 i {
+  line-height: 60px;
+  font-size: 30px;
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.overview-snip1208 h3,
+figure.overview-snip1208 p {
+  margin: 0;
+  padding: 0;
+}
+figure.overview-snip1208 h3 {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 600;
+  color: #333333;
+  text-transform: uppercase;
+}
+figure.overview-snip1208 p {
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+figure.overview-snip1208 button {
+  border: medium none;
+  padding: 10px 20px;
+  background-color:deepskyblue;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+figure.overview-snip1208 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.overview-snip1208:hover img,
+figure.overview-snip1208.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.overview-snip1208:hover .date,
+figure.overview-snip1208.hover .date {
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.overview-snip1208:hover i,
+figure.overview-snip1208.hover i {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
 
 /* Cards with overview information */
 
@@ -234,14 +391,19 @@ a:active {
 
 .container-home-about{
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  overflow: hidden !important
+  min-width: 100%;
+  min-height: 45%;
 
 }
 
 .aboutimg{
   max-width:50%;
   height: auto;
+  position: center;
+  top: 0px;
 }
 
 .imgsignature{
@@ -252,13 +414,29 @@ a:active {
 .info-container{
   display: inline-block;
   vertical-align: top;
-  padding: 0 0 0 5px;
+  text-align: left;
+  padding: 20px 60px 0 60px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/*Mission Card flip with Code Pen*/
+.abouttoptext{
+  color:rgb(107, 107, 107);
+}
+
+.aboutnametext{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.aboutcolored{
+  color: deepskyblue;
+}
+
+
+Mission Card flip with Code Pen
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -289,7 +467,7 @@ body {
   width: 100%;
   margin-left: 1rem;
   font-weight: 900;
-  font-size: 1.618rem;
+  font-size: 45px;
   text-transform: uppercase;
   letter-spacing: 0.1ch;
   line-height: 1;
@@ -297,6 +475,11 @@ body {
   margin-bottom: 1rem;
   position: relative;
 }
+
+.headingcoloredgoals{
+  color: deepskyblue;
+}
+
 .heading:after {
   display: block;
   content: '';
@@ -324,6 +507,16 @@ body {
   position: relative;
   background-color:rgb(240, 244, 248);
 }
+.fronttextcard{
+  color:white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.322);
+}
+
+.globehandsimg{
+  height: 8%;
+  width: 8%;
+}
+
 @media screen and (max-width: 800px) {
   .card {
     width: calc(50% - 2rem);
@@ -405,7 +598,7 @@ body {
 .card:nth-child(even):hover .back {
   transform: rotateY(0deg);
 }
-.button {
+.button1 {
   transform: translateZ(40px);
   cursor: pointer;
   -webkit-backface-visibility: hidden;
@@ -420,7 +613,7 @@ body {
   transform-style: preserve-3d;
   transition: 300ms ease;
 }
-.button:before {
+.button1:before {
   transition: 300ms ease;
   position: absolute;
   display: block;
@@ -434,22 +627,88 @@ body {
   left: 10px;
   top: 16px;
 }
-.button:hover {
+.button1:hover {
   transform: translateZ(55px);
 }
-.button:hover:before {
+.button1:hover:before {
   transform: translateZ(-55px);
 }
-.button:active {
+.button1:active {
   transform: translateZ(20px);
 }
-.button:active:before {
+.button1:active:before {
   transform: translateZ(-20px);
   top: 12px;
 }
 
 .divider{
   height: 100px;
+}
+
+.back .button1 {
+  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+}
+
+/*adding modal to button selection test*/
+
+.modal-bg{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.5);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 0.5s;
+  */
+}
+
+.bg-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal{
+  position: relative;
+  background-color: white;
+  font-family: 'Raleway', Arial, sans-serif;
+  color: black;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  Flex-direction: column;
+}
+.modaltxt{
+  float: left;
+  width: 50%; 
+}
+
+.modal img{
+  float: left;
+  width: 50%; 
+}
+.modal button{
+  padding: 10px 30px;
+  background-color: deepskyblue;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-family: 'Raleway', Arial, sans-serif;
+  cursor: pointer;
+}
+
+.modal-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+
 }
 
 /* Event card with Code Pen*/
@@ -459,6 +718,27 @@ body {
 @accent: #e74c3c;
 
 @container_width: 800px;
+
+
+
+
+.flex-grid{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: %;
+
+}
+
+.col{
+  flex: 1;
+  padding: 1%;
+
+}
+
+.col-md-3{
+
+}
 
 
 .post-module {
@@ -629,6 +909,246 @@ body {
   }
 }
 
+/*Reviews*/
+
+#quoteimage:{
+  background-color: blanchedalmond;
+}
+
+
+/*Blog Posts*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip1208 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+}
+figure.snip1208 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+figure.snip1208 img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+figure.snip1208 figcaption {
+  padding: 25px;
+  position: relative;
+}
+figure.snip1208 .date,
+figure.snip1208 i {
+  background-color:deepskyblue;
+  top: 25px;
+  color: #fff;
+  left: 25px;
+  min-height: 60px;
+  min-width: 60px;
+  position: absolute;
+  text-align: center;
+}
+figure.snip1208 .date {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+figure.snip1208 .date span {
+  display: block;
+  line-height: 30px;
+}
+figure.snip1208 .date .month {
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+figure.snip1208 i {
+  line-height: 60px;
+  font-size: 30px;
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.snip1208 h3,
+figure.snip1208 p {
+  margin: 0;
+  padding: 0;
+}
+figure.snip1208 h3 {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 600;
+  color: #333333;
+  text-transform: uppercase;
+}
+figure.snip1208 p {
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+figure.snip1208 button {
+  border: medium none;
+  padding: 10px 20px;
+  background-color:deepskyblue;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+figure.snip1208 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.snip1208:hover img,
+figure.snip1208.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.snip1208:hover .date,
+figure.snip1208.hover .date {
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.snip1208:hover i,
+figure.snip1208.hover i {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip1208:hover button,
+figure.snip1208.hover button {
+  background-color: #117964;
+}
 
 
 
+/*DONATE TEST*/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto';
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1524069290683-0457abfe42c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') no-repeat center;
+  background-size: cover;
+  background-color: rgba(53, 53, 53, 0.75);
+  background-blend-mode: multiply;
+  height: 40%;
+  width: 100%;
+}
+
+.inner-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  @media only screen and (min-width: 320px) {
+    padding-left: 15px;
+    padding-right: 15px; 
+  }
+  @media only screen and (min-width: 400px) {
+    padding-left: 40px;
+    padding-right: 40px; 
+  }
+  @media only screen and (min-width: 680px) {
+    font-size: 75px;
+  }
+  @media only screen and (min-width: 950px) {
+    font-size: 100px;
+  }
+}
+
+.p1 {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 900;
+  color: white;
+  marign: 0;
+  line-height: 1;
+  @media only screen and (max-width: 465px) {
+    display: block;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.p2 {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 100;
+  marign: 0;
+  line-height: 1;
+  color: #4FC3F7;
+  @media only screen and (max-width: 465px) {
+    position: relative;
+    top: 0.6em;
+  }
+}
+
+.hero-down {
+  position: absolute;
+  bottom: 0;
+  font-size: 2em;
+  width: 2em;
+  height: 2em;
+  color: #f5f5f5;
+  border-radius: 100%;
+  &:hover, &:focus {
+    color: #ccc;
+  }
+  &:active {
+    color: #f5f5f5;
+  }
+  .btn-react {
+    background-color: #f5f5f5;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    opacity: 0;
+    position: absolute;
+  }
+  i {
+    vertical-align: bottom;
+    position: relative;
+    top: 0.1em;
+  }
+}
+
+.donateanimationbutton{
+  background-color:transparent;
+  border-color: deepskyblue;
+  font-size: 65%;
+}
