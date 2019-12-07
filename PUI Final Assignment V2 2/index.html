@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+  <!-- <script href="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js</script"></script>
+  <script href="https://unpkg.com/vue-the-mask@0.11.1/dist/vue-the-mask.js"></script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baskervville|Open+Sans|Playfair+Display|Raleway|Sulphur+Point&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <link rel="stylesheet" href="index.css">
+
+  <script src="functionality.js"></script>
+</head>
+
+<body onload="updateText()">
+
+    
+
+  <!--Navigation Bar-->
+
+  <div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="images/iliLogo.png" width="30" height="30"
+        class="d-inline-block align-top" alt="">
+      International Leadership Institute
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#causes">Causes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#events">Events</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#partnerships">Partnerships</a>
+          </li>
+      </ul>
+      <button class="btn btn-danger navbar-btn nav-link" id="right-side-button" data-toggle="modal" data-target="#DonateModal">DONATE</button>
+    </div>
+  </div>
+
+
+  <!--Hero Image on Landing page-->
+  <div class="hero-image" >
+    <a name="home"></a>
+    <div class="hero-text animated animatedFadeInUp fadeInUp">
+      <p class="heromediumtext">Help to empower local and international communities</p>
+      <h1 id="herotextlarge">Changing the world one person at a time</h1>
+      <p>Focusing on people and nations in transition</p>
+      <button data-toggle="modal" data-target="#modalSubscriptionForm">Get Involved</button>
+    </div>
+
+
+    <!--lightbox style popup goes here-->
+  </div>
+
+
+
+
+
+  <!---FLOATING CARDS-->
+  <div class="divider"></div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="floating-card-col col-lg-3 col-md-6 col-12">
+        <figure class="overview-snip1208">
+          <img src="images/world.png" alt=" sample66" />
+          <figcaption>
+            <h3>Dedication to community</h3>
+            <p>
+                Increasing and strengthening international interchange and understanding to empower communities of color everywhere by promoting leadership, justice, peace, and democracy.
+            </p>
+            <div>
+              <a href="#">
+                <span class="left"></span>
+              </a>
+            </div>
+            <!-- <button class="eventsbutton">Read More</button> -->
+          </figcaption><a href="#"></a>
+        </figure>
+      </div>
+      <div class="floating-card-col col-lg-3 col-md-6 col-12">
+        <figure class="overview-snip1208">
+          <img src="images/world.png" alt=" sample66" />
+          <figcaption>
+            <h3>Compasion in action</h3>
+            <p>
+                Seeking long-term solutions that promote partnerships in order to empower self-reliance and independence among communities and individuals around the world.
+            </p>
+          </figcaption><a href="#"></a>
+        </figure>
+      </div>
+      <div class="floating-card-col col-lg-3 col-md-6 col-12">
+        <figure class="overview-snip1208">
+          <img src="images/world.png" alt=" sample66" />
+          <figcaption>
+            <h3>Responding to a need</h3>
+            <p>
+                Promoting partnerships in infrastructure, rule of law, and education development projects throughout the world. Reaching people in the least developed nations of the world. 
+            </p>
+          </figcaption><a href="#"></a>
+        </figure>
+      </div>
+      <div class="floating-card-col col-lg-3 col-md-6 col-12">
+        <figure class="overview-snip1208">
+          <img src="images/world.png" alt=" sample66" />
+          <figcaption>
+            <h3>Democratic Governance</h3>
+            <p>
+                 Promoting effective public sector institutions and processes that operate in a manner consistent with democratic values of transparency, representation, pluralism and accountability.
+            </p>
+          </figcaption><a href="#"></a>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--About Us information-->
+  <a name="about"></a>
+  <div class="divider" id="about-img-trigger"></div>
+  <div class="container-fuild">
+    <div class="row">
+      <div class="about-info-col col-lg-6 col-md-12"><img src="images/lajune.png" class="aboutimg" id="aboutimg1"
+          alt="about image"></div>
+
+      <div class="about-info-col col-lg-6 col-md-12">
+        <h4 class="abouttoptext">A charity with a mission</h4>
+        <h1 class="aboutnametext">We are the international</h1>
+        <h1 class="aboutcolored">Leadership Institute</h1>
+        <div class="divider"></div>
+        <p>Providing partnerships in infrastructure, rule of law, and educational development projects throughout the world that focus on people and nations in transition. The Institute's mission is to facilitate interaction in world affairs and foster intercultural communication among Minnesotans, international organizations and people in other countries..</p>
+        <p>The Institute promotes partnerships in infrastructure, rule of law, and education development projects throughout the world. Utilizing resources from both the public and private sectors, it focuses on reaching people in the least developed nations of the world and restoring services in countries ravaged by war. The Institute's programs focus on improving the justice and education systems in host countries.</p>
+        <br>
+        <h5>- Judge Lajune Lange</h5>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--Mission and Causes-->
+  <a name="causes"></a>
+  <div class="divider"></div>
+
+  <div class="container">
+    <div class="text-center">
+      <img src="images/globehands.png" class="globehandsimg" alt="test image">
+      <h1 class="heading">
+        Mission &
+        <span class="headingcoloredgoals">Goals</span>
+      </h1>
+      <p class="description">Hover over a card to flip it.</p>
+    </div>
+
+    <div class="content">
+      <a class="card" href="#!">
+        <div class="front"
+          style="background-image: url(https://i.pinimg.com/736x/b7/ce/2f/b7ce2f4c3738e46131f1ca3cc8da6266.jpg);">
+          <p class="fronttextcard">Constitutional Reform</p>
+        </div>
+        <div class="back">
+          <div>
+            <p class="mission-card-back-text">ILI supports constitutional reform by providing technical expertise and comparative information on constitutional reform processes.</p>
+            <button class="button1" data-toggle="modal" data-target="#exampleModalScrollable1">Learn More</button>
+          </div>
+        </div>
+      </a>
+      <a class="card" href="#!">
+        <div class="front"
+          style="background-image: url(https://i.pinimg.com/originals/ea/73/22/ea7322d51632b70c1fc5572996885501.jpg);">
+          <p class="fronttextcard">Legislative Developement</p>
+        </div>
+        <div class="back">
+          <div>
+            <p class="mission-card-back-text">ILI’s programs in this area cover most facets of legislative and parliamentary strengthening. </p>
+            <button class="button1" data-toggle="modal" data-target="#exampleModalScrollable2">Learn More</button>
+          </div>
+        </div>
+      </a>
+      <a class="card" href="#!">
+        <div class="front"
+          style="background-image: url(https://images.unsplash.com/photo-1561846845-1fbee407852a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);">
+          <p class="fronttextcard">Local Government</p>
+        </div>
+        <div class="back">
+          <div>
+            <p class="mission-card-back-text">Decentralization policies to create legal environments within which local government can be empowered.</p>
+            <button class="button1" data-toggle="modal" data-target="#exampleModalScrollable3">Learn More</button>
+          </div>
+        </div>
+      </a>
+      <a class="card" href="#!">
+        <div class="front"
+          style="background-image: url(https://images.unsplash.com/photo-1575136539837-ef84cd23474a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);">
+          <p class="fronttextcard">Public Integrity</p>
+        </div>
+        <div class="back">
+          <div>
+            <p class="mission-card-back-text"> Help to reduce election fraud, to promote transparency within political parties and to strengthen legislative oversight of the executive.</p>
+            <button class="button1" data-toggle="modal" data-target="#exampleModalScrollable4">Learn More</button>
+          </div>
+        </div>
+      </a><a class="card" href="#!">
+        <div class="front"
+          style="background-image: url(https://i.pinimg.com/564x/1e/96/38/1e9638745c4ab873fe81336a5516e73e.jpg);">
+          <p class="fronttextcard">Women's Participation.</p>
+        </div>
+        <div class="back">
+          <div>
+            <p class="mission-card-back-text">Promoting the equitable participation of women in politics and government</p>
+            <button class="button1" data-toggle="modal" data-target="#exampleModalScrollable5">Learn More</button>
+          </div>
+        </div>
+      </a><a class="card" href="#!">
+        <div class="front"
+          style="background-image: url(https://images.unsplash.com/photo-1575015105029-63f62620c602?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);">
+          <p class="fronttextcard">Responding to need</p>
+        </div>
+        <div class="back">
+          <div>
+            <p class="mission-card-back-text">Directing the efforts of professionals, and others who share a commitment to social justice, representative democracy, and nurturing community leadership</p>
+            <button class="button1" data-toggle="modal" data-target="#exampleModalScrollable6">Learn More</button>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- MODALS -->
+
+  <!--Modals for Mission & Causes Section-->
+
+  <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://i.pinimg.com/736x/b7/ce/2f/b7ce2f4c3738e46131f1ca3cc8da6266.jpg" class="modal-img" alt="test image">
+            </div>
+            <div class="col-6">
+              <h2 class="modal-h2">Constitutional Reform</h2>
+              <p class="modal-p">ILI supports constitutional reform by providing technical expertise and comparative information on constitutional reform processes. In partnership with local political party and civil society partners, ILI promotes political party dialogue on constitutional reform issues, assists lawmakers in drafting and reviewing constitutional reform provisions, and educates citizens about proposed changes to their constitutions in secular and Islamic societies.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://i.pinimg.com/originals/ea/73/22/ea7322d51632b70c1fc5572996885501.jpg" class="modal-img" alt="test image">
+            </div>
+            <div class="col-6">
+              <h2 class="modal-h2">Legislative Developement</h2>
+              <p class="modal-p">ILI’s programs in this area cover most facets of legislative and parliamentary strengthening. Given its comparative approach and worldwide network of legislative and parliamentary trainers, ILI is equally comfortable working in secular and Islamic systems. ILI has expertise in developing comprehensive new member orientation programs, and assists and trains members on a range of specific issues in the areas of committee structure and operations, public hearings, budget processes, constituency relations, executive-legislative relations, oversight, and transparency. ILI increasingly works to build legislative staff capacity by providing assistance on staff restructuring issues and by providing specialized skills development training. ILI supports the work of legislative committees on democratic development issues, including election law reform and freedom of information legislation. ILI conducts a range of institutional strengthening programs, including the development of legislative information technology systems, legislative libraries and legislative internship programs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://images.unsplash.com/photo-1561846845-1fbee407852a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" class="modal-img" alt="test image">
+            </div>
+            <div class="col-6">
+              <h2 class="modal-h2">Local Government</h2>
+              <p class="modal-p">Many of ILI’s programs promote public integrity, even though they may not be described as an ethics or anti-corruption program. For example, ILI’s programs help to reduce election fraud, to promote transparency within political parties and to strengthen legislative oversight of the executive. In addition, however, ILI conducts several programs focused specifically on developing legislative, ministerial and civil service codes of conduct. ILI also works with civil society groups to promote public integrity and conducts ethics training for governmental officials.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModalScrollable4" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://images.unsplash.com/photo-1575136539837-ef84cd23474a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" class="modal-img" alt="test image">
+            </div>
+            <div class="col-6">
+              <h2 class="modal-h2">Public Integrity</h2>
+              <p class="modal-p">Many of ILI’s programs promote public integrity, even though they may not be described as an ethics or anti-corruption program. For example, ILI’s programs help to reduce election fraud, to promote transparency within political parties and to strengthen legislative oversight of the executive. In addition, however, ILI conducts several programs focused specifically on developing legislative, ministerial and civil service codes of conduct. ILI also works with civil society groups to promote public integrity and conducts ethics training for governmental officials.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalScrollable5" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://i.pinimg.com/564x/1e/96/38/1e9638745c4ab873fe81336a5516e73e.jpg" class="modal-img" alt="test image">
+            </div>
+            <div class="col-6">
+              <h2 class="modal-h2">Women's Participation</h2>
+              <p class="modal-p">ILI is committed to promoting the equitable participation of women in politics and government. Comprising over 50 percent of the world’s population, women continue to be under-represented as voters, political leaders and as elected officials. Support for increased participation of women in political and civil leadership is consistent with ILI’s mandate to strengthen the inclusive nature and representative character of democratic institutions worldwide. The participation of women is an essential element in the design and implementation of all ILI programs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalScrollable6" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://images.unsplash.com/photo-1575015105029-63f62620c602?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" class="modal-img" alt="test image">
+            </div>
+            <div class="col-6">
+              <h2 class="modal-h2">Responding to need</h2>
+              <p class="modal-p">TThe International Leadership Institute directs the efforts of professionals, and others who share a commitment to social justice, representative democracy, and nurturing community leadership. The professionals who work through the Institute to improve their communities are widely experienced in international travel, providing technical assistance in diverse forms, from teaching to business consulting. The Institute relies upon the expertise of skilled professionals and upon cooperation with other organizations to identify and fill gaps in existing community services.
+                  <br>
+                  <br>
+                  The Institute promotes partnerships in infrastructure, rule of law, and education development projects throughout the world. Utilizing resources from both the public and private sectors, it focuses on reaching people in the least developed nations of the world and restoring services in countries ravaged by war. The Institute's programs focus on improving the justice and education systems in host countries.
+                  <br>
+                  <br>
+                  To this end, the Institute undertakes educational programs for children in science and computer technology building anti-corruption mechanisms within the judicial systems, and fostering economic development where immediate, as well as, long-term solutions are needed. The Institute develops and works on sustainable interventions that require the active collaboration of host country organizations in project planning, implementation and financing
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- https://getbootstrap.com/docs/4.4/components/carousel/ -->
+
+  <!--Reviews-->
+  <div class="divider"></div>
+
+  <div class="jumbotron jumbotron-fluid" id="quoteimage">
+    <div class="container text-centered">
+      <h1 class="display-4">Becoming a leader</h1>
+      <p class="lead">"Working with LIL has not only made me into a better leader, <br> but also transformed my
+        community"
+        <br><br> - John Smith
+      </p>
+    </div>
+  </div>
+
+
+<!---Forming Partnerships-->
+  <a name="partnerships"></a>
+  <div class="divider"></div>
+
+  <div class="container-fuild">
+    <div class="row">
+      <div class="about-info-col col-lg-6 col-md-12"><img src="images/aboutimage.jpg" class="aboutimg" id="aboutimg1"
+          alt="test image"></div>
+
+      <div class="about-info-col col-lg-6 col-md-12">
+        <h4 class="abouttoptext">A charity with a mission</h4>
+        <h1 class="aboutnametext">Community empowering</h1>
+        <h1 class="aboutcolored">Programs</h1>
+        <div class="divider"></div>
+        <p>The International Leadership Institute (ILI) views the strengthening of democratic governance as a critical component of its mission. ILI’s governance programs seek to promote - - in nations in transition - - effective public sector institutions and processes that operate in a manner consistent with democratic values of transparency, representation, pluralism and accountability. By improving governance institutions and processes, ILI seeks to ensure that progress in other areas of democratic development, such as elections, citizen participation and effective judicial systems become the foundation for national and local governance. Informal citizen participation is essential to sustain democratic reform.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!--Events Posts-->
+  <a name="events"></a>
+  <div class="divider"></div>
+
+  <div class="container-fluid">
+
+    <div class="text-center">
+      <img src="images/globehands.png" class="globehandsimg" alt="test image">
+      <p>A chairty with a mission</p>
+      <h1 class="heading">
+        What's
+        <span class="aboutcolored"> Happening</span>
+
+      </h1>
+    </div>
+
+
+    <div class="row">
+      <div class="floating-card-col col-lg-3 col-md-6 col-12">
+        <figure class="snip1208">
+          <img
+            src="images/hands.jpeg"
+            alt="sample66" />
+          <div class="date"><span class="day">01</span><span class="month">Jan</span></div><i class="ion-checkmark"></i>
+          <figcaption>
+            <h3>New year, new causes</h3>
+            <p>
+              Start off the new year by making a difference in the local Minneapolis community through an event teaching adults from mrginalized communities technical skills.
+            </p>
+            <button class="eventsbutton" data-toggle="modal" data-target="#exampleModalScrollable7">Read More &#8594;</button>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="floating-card-col col-lg-3 col-md-6 col-12">
+        <figure class="snip1208">
+          <img src="images/childsmiling.jpg" alt="sample6" />
+          <div class="date"><span class="day">20</span><span class="month">Jan</span></div><i class="ion-checkmark">
+          </i>
+          <figcaption>
+            <h3>MLK Day Youth Luncheon</h3>
+            <p>
+              The kids are the future. Join us for a luncheon to discuss how we can make Dr.Martin Luther Kings dream of equality come true for youth in South Africa.
+            </p>
+            <button data-toggle="modal" data-target="#exampleModalScrollable8">Read More &#8594;</button>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="floating-card-col col-lg-3 col-md-6 col-12">
+        <figure class="snip1208">
+          <img src="images/solochild.jpg" alt="sample6" />
+          <div class="date"><span class="day">17</span><span class="month">Feb</span></div><i class="ion-checkmark">
+          </i>
+          <figcaption>
+            <h3>Empowering the next generation</h3>
+            <p>
+              The rotatry club worked with local government officials to start a program for helping develope future leaders of the community.
+            </p>
+            <button data-toggle="modal" data-target="#exampleModalScrollable9">Read More &#8594;</button>
+          </figcaption>
+          <!-- <a href="#"></a> -->
+        </figure>
+      </div>
+      <div class="floating-card-col col-lg-3 col-md-6 col-12">
+        <figure class="snip1208">
+          <img src="images/womansmiling.jpg" alt="sample6" />
+          <div class="date"><span class="day">05</span><span class="month">Mar</span></div><i class="ion-checkmark">
+          </i>
+          <figcaption>
+            <h3>A wave of female leaders</h3>
+            <p>
+              Women are the backbone of many communities. Cici of XYZ, is the first female entrepeneur in her community to provide services in the automotive space.
+            </p>
+            <button data-toggle="modal" data-target="#exampleModalScrollable10">Read More &#8594;</button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+  </div>
+
+     <!-- Modals for events section -->
+
+  <div class="modal fade" id="exampleModalScrollable7" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <img src="images/hands.jpeg" class="modal-img" alt="test image">
+            </div>
+            <div class="col-6">
+              <h2 class="modal-h2">New year, new causes</h2>
+              <p class="modal-p">Celebrate the End of a Decade at Wanango Country Club! OPEN TO THE PUBLIC! Dinner: 5:30 p.m. - 7:30 p.m. Doors open for music at 8:00 p.m. Pork & Sauerkraut at 10:00 p.m. Champagne Toast at 11:45 p.m. Cost: $35.00/person - Dinner Only $50.00/person - Dinner & Music $35.00/person - Music Only Dinner Menu: Prime Rib Carving Station Roasted Pork Loin Carving Station Sauerkraut Garlic & Herb Red Skin Mashed Potatoes Broccoli with Brown Butter Chocolate Decadent Cake Party from 8:30 p.m. - 12:30 a.m. with Lawyers, Guns, & Money!! RESERVATIONS REQUIRED
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModalScrollable8" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <img src="images/childsmiling.jpg" class="modal-img" alt="test image">
+            </div>
+            <div class="col-6">
+              <h2 class="modal-h2">MLK Day Youth Luncheon</h2>
+              <p class="modal-p">The 34th Annual Dr. Martin Luther King, Jr. President's Luncheon will take place on Martin Luther King Jr. Day, Monday, January 20, 2020 in the EMU Student Center Grand Ballroom. Doors open at 11 a.m. with lunch beginning at 11:30 a.m. Our distinguished keynote speaker will be Terrence J. Roberts, one of the 'Little Rock Nine' who helped desegregate Central High School in Little Rock, Arkansas in 1957. Dr. Roberts will give brief comments at the luncheon and his keynote address will follow at 2 p.m. in the Student Center Auditorium.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModalScrollable9" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <img src="images/solochild.jpg" class="modal-img" alt="test image">
+            </div>
+            <div class="col-6">
+              <h2 class="modal-h2">Empowering the next generation</h2>
+              <p class="modal-p">What is the power of international education? It could start with something as simple as investing in 100 girls' secondary school education. In Ethiopia, most girls are not enrolled in secondary school, leaving a significant proportion of the population without the tools that they need to contribute to the country's economic development. Only a third of girls in Ethiopia enroll in 9th grade, and a mere 3.5% of these girls continue to 11th grade, the required pathway to advance to university. That's why in 2013 IIE launched the Higher Education Readiness (HER) pilot program to provide scholarships for underserved girls in Ethiopia to assist them in successfully completing secondary school and to ultimately continue on to university.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalScrollable10" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <img src="images/womansmiling.jpg" class="modal-img" alt="test image">
+            </div>
+            <div class="col-6">
+              <h2 class="modal-h2">A wave of female leaders</h2>
+              <p class="modal-p">Of course not all women have the same leadership styles but, generally, women “bring to leadership a more complete range of the qualities modern leaders need, including self-awareness, emotional attunement, humility and authenticity (2)”. In the modern workforce, employees are desiring more constant feedback, actually having relationships with their managers, and better work-life balance. These desires are most likely going to be met by a female manager, while it might not come as naturally to behave this way for a male leader (this is just a generalization, of course.)
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" style="width: 100%;">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!---Donate Test-->
+  <div class="divider"></div>
+  <section class="hero">
+    <div class="inner-text text-center">
+      <p class="p1">CHANGE </p>
+      <p class="p2">DEVELOPER</p>
+      <br>
+      <br>
+      <button class="donateanimationbutton" data-toggle="modal" data-target="#DonateModal">DONATE NOW</button>
+    </div>
+  </section>
+
+
+  <!--Foot Bar TEST-->
+  <!-- Footer -->
+  <footer class="page-footer font-small teal pt-4">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row footer-text">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3 footer-text-color">
+
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">General Contact Information</h5>
+          <p> 1234 Sesame Street <br>Pittsburgh, PA 15213
+            <br> <br>
+            871-312-4312
+            <br> <br>
+            ILIFoundation@LIL.com
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-3 footer-text-color">
+
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">International Contact Informatoin</h5>
+          <p>2342 Lydon Ave. <br> Mogadishu, Somalia 123-12394
+            <br> <br>
+            +12-349-234-4324
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Text -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a> International Leadership Institute</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+ 
+
+  <!--Donate Modal-->
+
+  <div class="modal fade" id="DonateModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+                   <h3 class="modal-title text-center" id="myModalLabel">Donation</h3>
+  
+              </div>
+              <div class="modal-body">
+                  <div class="row text-center">
+                      <form class="col-md-10 col-md-offset-1" style="padding:0">
+                          <div class="form-group col-md-12">
+                              <input type="text" class="form-control" id="signupEmail1" placeholder="Card Number" contenteditable="false">
+                          </div>
+                        <p>Expiration</p>
+                          <div class="form-group col-md-6">                            
+                              <input type="text" class="form-control" id="signupPassword" placeholder="Month" contenteditable="false">
+                          </div>
+                          <div class="form-group col-md-6">                            
+                              <input type="text" class="form-control" id="signupPassword" placeholder="Year" contenteditable="false">
+                          </div>
+                          <div class="form-group col-md-12">
+                              <input type="text" class="form-control" id="access-code" placeholder="Premier Access Code">
+                          </div>
+                        <div class="clearfix"></div>
+                      </form>
+                  </div>
+                  <div class="row text-center">
+                    <hr>
+                      <button type="button" class="btn btn-primary col-md-8 col-md-offset-2">Save Card</button>
+                      <br class="">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!--Get invovled HERO IMAGE Modal-->
+  <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Subscribe</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <input type="text" id="form3" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="form3">Your name</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <input type="email" id="form2" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="form2">Your email</label>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-indigo">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--Donate Modal TEST-->
+  <!-- <div class="modal fade" id="#exampleModalScrollable-donate" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="wrapper" id="app">
+        <div class="card-form">
+          <div class="card-list">
+            <div class="card-item" v-bind:class="{ '-active' : isCardFlipped }">
+              <div class="card-item__side -front">
+                <div class="card-item__focus" v-bind:class="{'-active' : focusElementStyle }" v-bind:style="focusElementStyle" ref="focusElement"></div>
+                <div class="card-item__cover">
+                  <img
+                  v-bind:src="'https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/' + currentCardBackground + '.jpeg'" class="card-item__bg">
+                </div>
+                
+                <div class="card-item__wrapper">
+                  <div class="card-item__top">
+                    <img src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/chip.png" class="card-item__chip">
+                    <div class="card-item__type">
+                      <transition name="slide-fade-up">
+                        <img v-bind:src="'https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/' + getCardType + '.png'" v-if="getCardType" v-bind:key="getCardType" alt="" class="card-item__typeImg">
+                      </transition>
+                    </div>
+                  </div>
+                  <label for="cardNumber" class="card-item__number" ref="cardNumber">
+                    <template v-if="getCardType === 'amex'">
+                      <span v-for="(n, $index) in amexCardMask" :key="$index">
+                      <transition name="slide-fade-up">
+                        <div
+                          class="card-item__numberItem"
+                          v-if="$index > 4 && $index < 14 && cardNumber.length > $index && n.trim() !== ''"
+                        >*</div>
+                        <div class="card-item__numberItem"
+                          :class="{ '-active' : n.trim() === '' }"
+                          :key="$index" v-else-if="cardNumber.length > $index">
+                          {{cardNumber[$index]}}
+                        </div>
+                        <div
+                          class="card-item__numberItem"
+                          :class="{ '-active' : n.trim() === '' }"
+                          v-else
+                          :key="$index + 1"
+                        >{{n}}</div>
+                      </transition>
+                    </span>
+                    </template>
+    
+                    <template v-else>
+                      <span v-for="(n, $index) in otherCardMask" :key="$index">
+                        <transition name="slide-fade-up">
+                          <div
+                            class="card-item__numberItem"
+                            v-if="$index > 4 && $index < 15 && cardNumber.length > $index && n.trim() !== ''"
+                          >*</div>
+                          <div class="card-item__numberItem"
+                            :class="{ '-active' : n.trim() === '' }"
+                            :key="$index" v-else-if="cardNumber.length > $index">
+                            {{cardNumber[$index]}}
+                          </div>
+                          <div
+                            class="card-item__numberItem"
+                            :class="{ '-active' : n.trim() === '' }"
+                            v-else
+                            :key="$index + 1"
+                          >{{n}}</div>
+                        </transition>
+                      </span>
+                    </template>
+                  </label>
+                  <div class="card-item__content">
+                    <label for="cardName" class="card-item__info" ref="cardName">
+                      <div class="card-item__holder">Card Holder</div>
+                      <transition name="slide-fade-up">
+                        <div class="card-item__name" v-if="cardName.length" key="1">
+                          <transition-group name="slide-fade-right">
+                            <span class="card-item__nameItem" v-for="(n, $index) in cardName.replace(/\s\s+/g, ' ')" v-if="$index === $index" v-bind:key="$index + 1">{{n}}</span>
+                          </transition-group>
+                        </div>
+                        <div class="card-item__name" v-else key="2">Full Name</div>
+                      </transition>
+                    </label>
+                    <div class="card-item__date" ref="cardDate">
+                      <label for="cardMonth" class="card-item__dateTitle">Expires</label>
+                      <label for="cardMonth" class="card-item__dateItem">
+                        <transition name="slide-fade-up">
+                          <span v-if="cardMonth" v-bind:key="cardMonth">{{cardMonth}}</span>
+                          <span v-else key="2">MM</span>
+                        </transition>
+                      </label>
+                      /
+                      <label for="cardYear" class="card-item__dateItem">
+                        <transition name="slide-fade-up">
+                          <span v-if="cardYear" v-bind:key="cardYear">{{String(cardYear).slice(2,4)}}</span>
+                          <span v-else key="2">YY</span>
+                        </transition>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-item__side -back">
+                <div class="card-item__cover">
+                  <img
+                  v-bind:src="'https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/' + currentCardBackground + '.jpeg'" class="card-item__bg">
+                </div>
+                <div class="card-item__band"></div>
+                <div class="card-item__cvv">
+                    <div class="card-item__cvvTitle">CVV</div>
+                    <div class="card-item__cvvBand">
+                      <span v-for="(n, $index) in cardCvv" :key="$index">
+                        *
+                      </span>
+    
+                  </div>
+                    <div class="card-item__type">
+                        <img v-bind:src="'https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/' + getCardType + '.png'" v-if="getCardType" class="card-item__typeImg">
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-form__inner">
+            <div class="card-input">
+              <label for="cardNumber" class="card-input__label">Card Number</label>
+              <input type="text" id="cardNumber" class="card-input__input" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off">
+            </div>
+            <div class="card-input">
+              <label for="cardName" class="card-input__label">Card Holders</label>
+              <input type="text" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
+            </div>
+            <div class="card-form__row">
+              <div class="card-form__col">
+                <div class="card-form__group">
+                  <label for="cardMonth" class="card-input__label">Expiration Date</label>
+                  <select class="card-input__input -select" id="cardMonth" v-model="cardMonth" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate">
+                    <option value="" disabled selected>Month</option>
+                    <option v-bind:value="n < 10 ? '0' + n : n" v-for="n in 12" v-bind:disabled="n < minCardMonth" v-bind:key="n">
+                        {{n < 10 ? '0' + n : n}}
+                    </option>
+                  </select>
+                  <select class="card-input__input -select" id="cardYear" v-model="cardYear" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate">
+                    <option value="" disabled selected>Year</option>
+                    <option v-bind:value="$index + minCardYear" v-for="(n, $index) in 12" v-bind:key="n">
+                        {{$index + minCardYear}}
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="card-form__col -cvv">
+                <div class="card-input">
+                  <label for="cardCvv" class="card-input__label">CVV</label>
+                  <input type="text" class="card-input__input" id="cardCvv" v-mask="'####'" maxlength="4" v-model="cardCvv" v-on:focus="flipCard(true)" v-on:blur="flipCard(false)" autocomplete="off">
+                </div>
+              </div>
+            </div>
+    
+            <button class="card-form__button">
+              Submit
+            </button>
+          </div>
+        </div>
+        
+        <a href="https://github.com/muhammederdem/credit-card-form" target="_blank" class="github-btn">
+          See on GitHub
+        </a>
+      </div>
+    </div>
+  </div> -->
+
+
+</body>
+
+</html>
